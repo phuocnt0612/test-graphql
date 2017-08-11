@@ -14,8 +14,9 @@ Organize test-graphql/laradock folder as below structure:
 ```
 
 ## GraphQL
+
 **Access GraphQL UI:**
 
 ```
-localhost/graphiql
+test-graphql.me/graphiql
 ```
