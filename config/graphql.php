@@ -98,10 +98,10 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-
+                'users' => 'App\GraphQL\Query\UsersQuery'
             ],
             'mutation' => [
-
+                'createUser' => 'App\GraphQL\Mutation\CreateUserMutation'
             ]
         ]
     ],
@@ -122,7 +122,7 @@ return [
     // ]
     //
     'types' => [
-
+        'User' => 'App\GraphQL\Type\UserType'
     ],
 
     // This callable will received every Error objects for each errors GraphQL catch.

@@ -9,14 +9,21 @@ use GraphQL;
 class UserType extends BaseType
 {
     protected $attributes = [
-        'name' => 'UserType',
-        'description' => 'A type'
+        'name' => 'User',
+        'description' => 'A user'
     ];
 
     public function fields()
     {
         return [
-            
+            'id' => [
+                'type' => Type::nonNull(Type::string()),
+                'description' => 'The id of user'
+            ],
+            'email' => [
+                'type' => Type::nonNull(Type::string()),
+                'description' => 'The email of user'
+            ]
         ];
     }
 }
