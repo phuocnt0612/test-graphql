@@ -21,6 +21,11 @@ class CreateUserMutation extends Mutation {
     public function args()
     {
         return [
+            'name' => [
+                'name' => 'name',
+                'type' => Type::nonNull(Type::string()),
+                'rules' => ['required']
+            ],
             'email' => [
                 'name' => 'email',
                 'type' => Type::nonNull(Type::string()),
